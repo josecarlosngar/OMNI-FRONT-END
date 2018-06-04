@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { VistaPorDefectoComponent } from './vista-por-defecto/vista-por-defecto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VistaPorDefectoComponent
   ],
   imports: [
     BrowserModule
