@@ -4,12 +4,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { VistaPorDefectoComponent } from './vista-por-defecto/vista-por-defecto.component';
 import { PostComponent } from './post/post.component';
+import { LogginComponent } from './loggin/loggin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VistaPorDefectoComponent,
-    PostComponent
+    PostComponent,
+    LogginComponent
   ],
   imports: [
     BrowserModule,
