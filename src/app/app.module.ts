@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { VistaPorDefectoComponent } from './vista-por-defecto/vista-por-defecto.component';
 import { PostComponent } from './post/post.component';
 import { LogginComponent } from './loggin/loggin.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LogginComponent } from './loggin/loggin.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    ReactiveFormsModule
     
   ],
   providers: [],
