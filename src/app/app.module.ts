@@ -17,8 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,HttpClientModule,
-    NgbModule.forRoot()
-    // ReactiveFormsModule    
+    NgbModule.forRoot(),
+    
   ],
   providers: [{provide: PostService, useClass: PostService}],
   bootstrap: [AppComponent]
