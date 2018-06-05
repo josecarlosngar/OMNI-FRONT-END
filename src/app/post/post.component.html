@@ -1,3 +1,22 @@
-<p>
-  post works!
-</p>
+<div>
+<table class="table">
+    <thead class="thead-dark">
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of listaPost">
+          <td>
+            <img [src]="post.user.image">
+          </td>
+          <td>
+            {{post.user.name}}
+          </td>
+          <td>{{post.text}}</td>
+          
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+ 
