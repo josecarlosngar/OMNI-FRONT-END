@@ -1,0 +1,24 @@
+.image-adaptada{
+width :70px ;
+height : 70px ;
+
+}
+.nombre{
+    color: rgba(2, 5, 19, 0.849);
+}
+.rounded{
+    width: auto;
+    height: 100px;
+    align-content: flex-end;
+}
+.fecha{
+    text-align: right;
+}
+.texto{
+
+    align-content: space-around;
+}
+
+hr{
+    border: 0.5px solid rgb(102, 99, 97);
+}
