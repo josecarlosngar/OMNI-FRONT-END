@@ -7,6 +7,7 @@ import { PostComponent } from './post/post.component';
 import { LogginComponent } from './loggin/loggin.component';
 import { PostService } from './Service/post.service';
 import { HttpClientModule } from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,HttpClientModule,
     NgbModule.forRoot(),
-    
+    ReactiveFormsModule    
   ],
   providers: [{provide: PostService, useClass: PostService}],
   bootstrap: [AppComponent]
