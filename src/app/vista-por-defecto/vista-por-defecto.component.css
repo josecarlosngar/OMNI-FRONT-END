@@ -2,3 +2,24 @@
     float: none;
     margin: 0 auto;
 }
+
+.cabecera{
+    background-color: black
+}
+
+h1{
+     text-align: center
+    
+}
+.heading { 
+    color: rgb(141, 9, 9);
+ }
+
+.link-visitas :hover{
+    
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    font-size: 36px;
+    color: rgb(167, 17, 17);
+}

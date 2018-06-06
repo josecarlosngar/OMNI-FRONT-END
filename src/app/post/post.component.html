@@ -1,22 +1,26 @@
 <div>
-<table class="table">
-    <thead class="thead-dark">
-    </thead>
+  <br>
+  <table class="table">
     <tbody>
-        <tr *ngFor="let post of listaPost">
-          <td>
-            <img [src]="post.user.image" class="img-responsive" alt="Imagen responsive">
-          </td>
-          <td>
-            {{post.user.name}}
-          </td>
-          <td>{{post.text}}</td>
-          <td>{{post.creationDate}}</td>
-        </tr>
+      <tr *ngFor="let post of listaPost">
+        <ul class="list-unstyled">
+          <li class="media">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-2">
+                  <img class="mr-3" src="{{post.user.image}}" class="rounded" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-10">
+                  <h5 class="mt-0 mb-1">{{post.user.name}}</h5>
+                  <p class="texto">{{post.text}}</p>
+                  <h6 class="fecha">{{post.creationDate}}</h6>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </li>
+        </ul>
+      </tr>
     </tbody>
   </table>
 </div>
-
-
-
- 

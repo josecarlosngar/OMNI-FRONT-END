@@ -25,7 +25,8 @@ export class PostService {
         });
         let jsonUser: any = post['user'];
         // alert(jsonUser['id']);
-        let user: User = new User(jsonUser['id'], "", "", jsonUser['name'], jsonUser['surname'], "", "", jsonUser['image'], jsonUser['registrationMoment']);
+        let user: User = new User(jsonUser['id'], "", "", jsonUser['name'], jsonUser['surname'], "", "",
+         jsonUser['image'], jsonUser['registrationMoment']);
         postList.push(new Post(post['id'], post['creationDate'], post['edited'], post['editionDate'], post['text'], tagList, user));
       });
     });
