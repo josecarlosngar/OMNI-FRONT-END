@@ -5,7 +5,7 @@
     <tbody>
         <tr *ngFor="let post of listaPost">
           <td>
-            <img [src]="post.user.image">
+            <img [src]="post.user.image" class="img-responsive" alt="Imagen responsive">
           </td>
           <td>
             {{post.user.name}}
