@@ -1,22 +1,39 @@
 <div>
-<table class="table">
+  <table class="table">
     <thead class="thead-dark">
     </thead>
     <tbody>
-        <tr *ngFor="let post of listaPost">
-          <td>
-            <img [src]="post.user.image" class="img-responsive" alt="Imagen responsive">
-          </td>
-          <td>
-            {{post.user.name}}
-          </td>
-          <td>{{post.text}}</td>
-          <td>{{post.creationDate}}</td>
-        </tr>
+      <tr *ngFor="let post of listaPost">
+        <td>
+          <img [src]="post.user.image" class="img-responsive" alt="Imagen responsive">
+        </td>
+        <td>
+          {{post.user.name}}
+        </td>
+        <td>{{post.text}}</td>
+
+       
+        <td>{{post.creationDate}}</td>
+      </tr>
     </tbody>
   </table>
 </div>
 
-
-
- 
+<!-- <div>
+  <table class="table">
+      <thead class="thead-dark">
+      </thead>
+      <tbody>
+          <tr *ngFor="let post of listaPostTag">
+            <td>
+              <img [src]="post.user.image" class="img-responsive" alt="Imagen responsive">
+            </td>
+            <td>
+              {{post.user.name}}
+            </td>
+            <td>{{post.text}}</td>
+            <td>{{post.creationDate}}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div> -->

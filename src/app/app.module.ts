@@ -7,19 +7,25 @@ import { PostComponent } from './post/post.component';
 import { LogginComponent } from './loggin/loggin.component';
 import { PostService } from './Service/post.service';
 import { HttpClientModule } from '@angular/common/http';
-import {ReactiveFormsModule} from '@angular/forms'
+import {ReactiveFormsModule, FormsModule} from '@angular/forms'
+
+import {routing} from './app.Routing';
+import { TagComponent } from './tag/tag.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VistaPorDefectoComponent,
     PostComponent,
-    LogginComponent
+    LogginComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,
     NgbModule.forRoot(),
-    ReactiveFormsModule    
+    ReactiveFormsModule,
+    routing,
+    FormsModule
   ],
   providers: [{provide: PostService, useClass: PostService}],
   bootstrap: [AppComponent]
