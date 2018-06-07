@@ -9,6 +9,9 @@ import { PostService } from './Service/post.service';
 import { HttpClientModule } from '@angular/common/http';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
 
+
+
+
 import {routing} from './app.Routing';
 import { TagComponent } from './tag/tag.component';
 

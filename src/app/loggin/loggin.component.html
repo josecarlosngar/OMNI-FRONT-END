@@ -1,36 +1,36 @@
-<form class="px-4 py-3" [formGroup]="loginForm" (ngSubmit)="submit()" novalidate>
+<form class="px-4 py-3" [formGroup]="loginForm">
   <div class="form-group">
     <label class="center-block">Email:
-      <input class="form-control" formControlName="email">
+      <input class="form-control" formControlName="email" type='text' [(ngModel)]="email" />
     </label>
 
-    <div *ngIf="loginForm.get('email').errors" class="alert alert-danger">
+    <!-- <div *ngIf="loginForm.get('email').errors" class="alert alert-danger">
       <div *ngIf="loginForm.get('email').errors['required']">
         Email requerido
       </div>
       <div *ngIf="loginForm.get('email').errors['email']">
         Email incorrecto
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="form-group">
     <label class="center-block">Password:
-      <input type="password" class="form-control" formControlName="password">
+      <input type="password" class="form-control" formControlName="password" [(ngModel)]="password"/>
     </label>
 
-    <div *ngIf="loginForm.get('password').errors" class="alert alert-danger">
-      <div *ngIf="loginForm.get('password').errors['required']">
-        Password requerido
-      </div>
-      <div *ngIf="loginForm.get('password').errors['minlength']">
-        Password inseguro
-      </div>
-    </div>
+      <!-- <div *ngIf="loginForm.get('password').errors" class="alert alert-danger">
+        <div *ngIf="loginForm.get('password').errors['required']">
+          Password requerido
+        </div>
+        <div *ngIf="loginForm.get('password').errors['minlength']">
+          Password inseguro
+        </div>
+      </div> -->
   </div>
 
-  
-  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Sign in</button>
-  <button type="reset" class="btn btn-default " style="float: right">Reset</button>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" (click)="logueo()">Sign in</button>
+  <!-- <button type="reset" class="btn btn-default " style="float: right">Reset</button> -->
 
 </form>

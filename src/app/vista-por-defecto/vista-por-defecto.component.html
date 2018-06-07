@@ -1,8 +1,9 @@
 <div class="container">
   <div class="alert alert-dark" role="alert">
     <h1 style="text-align: center">Omni
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm" style="float: right">Sign in</button>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal" style="float: right">New Post</button>
+      <button *ngIf="!isUsuarioLoged()" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm" style="float: right">Sign in</button>
+      <button *ngIf="isUsuarioLoged()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal" style="float: right">New Post</button>
+      <!-- <img *ngIf="isUsuarioLoged()" class="mr-3" src="{{getUsuario().image}}" class="rounded" alt="Generic placeholder image" style="float: right;"> -->
     </h1>
   </div>
 </div>

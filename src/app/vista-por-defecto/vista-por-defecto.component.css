@@ -23,3 +23,9 @@ h1{
     font-size: 36px;
     color: rgb(167, 17, 17);
 }
+
+.rounded{
+    width: auto;
+    height: 100px;
+    align-content: flex-end;
+}
